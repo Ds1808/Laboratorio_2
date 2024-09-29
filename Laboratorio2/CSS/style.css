@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to top, black, purple);
+    padding: 80px;
+    height: auto;
+    width: 100%;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: darkslateblue;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba( 0, 0, 0, 0.1);
+
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 15px;
+    color: rgb(255, 255, 255);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+input[type="text"]{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button{
+    display: block;
+    background-color: rgb(0, 139, 74);
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+}
+
+button:hover {
+    background-color: rgba(202, 33, 33, 0.76);
+}
+
+/* Estilo para el input de fecha */
+.form-group input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+/* Estilo para el input de fecha al enfocarse */
+.form-group input[type="date"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+#event-list{
+    margin-top: 30px;
+}
+#event-list h2{
+    color:white
+}
+
+#events{
+    list-style: none;
+    padding: 0;
+}
+
+#events li{
+    background-color: beige;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.delete-btn{
+    background-color: tomato;
+    color: white;
+    border: 1px;
+    padding: 5px 10px;
+    cursor:  pointer;
+    border-radius: 3px;
+}
+
+.delete-btn:hover{
+    background-color: brown;
+    
+}
